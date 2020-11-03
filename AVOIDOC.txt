@@ -1,0 +1,48 @@
+Menu("Avoid the O's Game!","Play",1,"About",2
+Lbl 1
+ClrHome
+1→A
+1→B
+10→C
+26→D
+10→E
+1→F
+10→I
+26→J
+Repeat (K=22) or (A=C and B=D) or (A=E and B=F) or (A=I and B=J)
+getKey→K
+If Ans
+Output(A,B," ")
+min(10,max(1,A+sum(DeltaList(Ans={25,34→A
+min(26,max(1,B+sum(DeltaList(K={24,26→B
+Output(A,B,"X")
+Output(C,D," ")
+Output(E,F," ")
+Output(I,J,"W")
+min(10,max(1,C+randInt(⁻1,1)))→C
+min(26,max(1,D+randInt(⁻1,1)))→D
+min(10,max(1,E+randInt(⁻1,1)))→E
+min(26,max(1,F+randInt(⁻1,1)))→F
+Output(C,D,"O")
+Output(E,F,"O")
+If (A=C and B=D) or (A=E and B=F)
+Then
+ClrHome
+Output(5,9,"You lose!")
+Pause ""
+End
+If (A=I and B=J)
+Then
+ClrHome
+Output(5,10,"You win!")
+Pause ""
+End
+End
+ClrHome
+Stop
+Lbl 2
+ClrHome
+Output(1,1,"To play, use the D-pad. Avoid the O's and try to reach the W. To quit, press MODE. Press Enter to exit this menu.")
+Pause ""
+ClrHome
+Stop
