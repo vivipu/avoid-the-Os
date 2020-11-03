@@ -7,7 +7,9 @@ ClrHome
 26→D
 10→E
 1→F
-Repeat (K=11) or (A=C and B=D) or (A=E and B=F)
+10→G
+8→H
+Repeat (K=22) or (A=C and B=D) or (A=E and B=F)
 getKey→K
 If Ans
 Output(A,B," ")
@@ -16,18 +18,21 @@ min(26,max(1,B+sum(DeltaList(K={24,26→B
 Output(A,B,"X")
 Output(C,D," ")
 Output(E,F," ")
+Output(G,H," ")
 min(10,max(1,C+randInt(⁻1,1)))→C
 min(26,max(1,D+randInt(⁻1,1)))→D
 min(10,max(1,E+randInt(⁻1,1)))→E
 min(26,max(1,F+randInt(⁻1,1)))→F
+min(10,max(1,G+randInt(⁻1,1)))→G
+min(26,max(1,H+randInt(⁻1,1)))→H
 Output(C,D,"O")
 Output(E,F,"O")
+Output(G,H,"O")
 End
 ClrHome
 Stop
 Lbl 2
-Repeat (K=105)
-getKey→K
-Output(1,8,"To play, use the D-pad. To quit, enter Y=. Press enter to exit this menu.")
-End
+ClrHome
+Output(1,1,"To play, use the D-pad. To quit, press MODE. Press enter to exit this menu.")
+Pause ""
 Stop
