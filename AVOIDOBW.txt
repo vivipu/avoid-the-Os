@@ -3,10 +3,10 @@ Lbl 1
 ClrHome
 1→A
 1→B
-8→C
-16→D
-8→I
-16→J
+randInt(3,8)→C
+randInt(3,16)→D
+randInt(3,8)→I
+randInt(3,16)→J
 Repeat (K=22) or (A=C and B=D) or (A=I and B=J)
 getKey→K
 If Ans
@@ -36,7 +36,7 @@ ClrHome
 Stop
 Lbl 2
 ClrHome
-Output(1,1,"To play, use the D-pad. Avoid the O and try to reach the W. To quit, press MODE. Press Enter to exit this menu.")
+Output(1,1,"To play, use the D-pad. Avoid the O's and try to reach the W. To quit, press MODE. Press Enter to exit this menu.")
 Pause ""
 ClrHome
 Stop

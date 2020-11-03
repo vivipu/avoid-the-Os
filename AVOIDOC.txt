@@ -3,12 +3,12 @@ Lbl 1
 ClrHome
 1→A
 1→B
-10→C
-26→D
-10→E
-1→F
-10→I
-26→J
+randInt(5,10)→C
+randInt(5,26)→D
+randInt(5,10)→E
+randInt(5,26)→F
+randInt(7,10)→I
+randInt(7,26)→J
 Repeat (K=22) or (A=C and B=D) or (A=E and B=F) or (A=I and B=J)
 getKey→K
 If Ans
