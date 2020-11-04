@@ -18,13 +18,16 @@ min(26,max(1,B+sum(DeltaList(K={24,26→B
 Output(A,B,"X")
 Output(C,D," ")
 Output(E,F," ")
-Output(I,J,"W")
+Output(I,J," ")
 min(10,max(1,C+randInt(⁻1,1)))→C
 min(26,max(1,D+randInt(⁻1,1)))→D
 min(10,max(1,E+randInt(⁻1,1)))→E
 min(26,max(1,F+randInt(⁻1,1)))→F
+min(10,max(1,I+randInt(⁻1,1)))→I
+min(26,max(1,J+randInt(⁻1,1)))→J
 Output(C,D,"O")
 Output(E,F,"O")
+Output(I,J,"W")
 If (A=C and B=D) or (A=E and B=F)
 Then
 ClrHome
