@@ -7,28 +7,28 @@ randInt(3,8)→C
 randInt(3,16)→D
 randInt(3,8)→I
 randInt(3,16)→J
-Repeat (K=22) or (A=C and B=D) or (A=I and B=J)
+Repeat (K=22) or (A=C and B=D) and (C=A and D=B) or (A=I and B=J) and (I=A and J=B)
+Output(C,D," ")
+min(8,max(1,C+randInt(⁻1,1)))→C
+min(16,max(1,D+randInt(⁻1,1)))→D
+Output(C,D,"O")
+Output(I,J," ")
+min(8,max(1,I+randInt(⁻1,1)))→I
+min(16,max(1,J+randInt(⁻1,1)))→J
+Output(I,J,"W")
 getKey→K
 If Ans
 Output(A,B," ")
 min(8,max(1,A+sum(DeltaList(Ans={25,34→A
 min(16,max(1,B+sum(DeltaList(K={24,26→B
 Output(A,B,"X")
-Output(C,D," ")
-Output(I,J," ")
-min(8,max(1,C+randInt(⁻1,1)))→C
-min(16,max(1,D+randInt(⁻1,1)))→D
-min(8,max(1,I+randInt(⁻1,1)))→I
-min(16,max(1,J+randInt(⁻1,1)))→J
-Output(C,D,"O")
-Output(I,J,"W")
-If (A=C and B=D)
+If (A=C and B=D) and (C=A and D=B)
 Then
 ClrHome
 Output(4,5,"You lose!")
 Pause ""
 End
-If (A=I and B=J)
+If (A=I and B=J) and (I=A and J=B)
 Then
 ClrHome
 Output(4,5,"You win!")
